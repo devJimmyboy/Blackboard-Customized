@@ -1,0 +1,91 @@
+Arguments: 
+  /home/jimmydv6/.nvm/versions/node/v16.4.0/bin/node /usr/share/yarn/bin/yarn.js init
+
+PATH: 
+  /home/jimmydv6/.yarn/bin:/home/jimmydv6/.nvm/versions/node/v16.4.0/bin:/home/jimmydv6/bin:/usr/local/bin:/home/jimmydv6/.vscode-server-insiders/bin/1db97b8c87fb32aa47b58135832733f4950362b4/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/System32:/mnt/c/Users/jimmy/AppData/Local/Programs/Microsoft VS Code/bin:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/common-aliases:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/nvm:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/debian:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/jsontools:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/yarn:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/node:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/npm:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/fasd:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/alias-finder:/home/jimmydv6/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/gpg-agent:/home/jimmydv6/.antigen/bundles/psprint/zsh-navigation-tools:/home/jimmydv6/.antigen/bundles/MichaelAquilina/zsh-you-should-use:/home/jimmydv6/.antigen/bundles/desyncr/auto-ls:/home/jimmydv6/.antigen/bundles/stanislas/allergen/plugins/stan:/home/jimmydv6/.antigen/bundles/redxtech/zsh-fzf-utils:/home/jimmydv6/.antigen/bundles/redxtech/zsh-fzf-utils/functions:/home/jimmydv6/.antigen/bundles/vmattos/kill-node:/home/jimmydv6/.antigen/bundles/Aloxaf/fzf-tab:/home/jimmydv6/.antigen/bundles/zpm-zsh/ls:/home/jimmydv6/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/jimmydv6/.local/bin:/home/jimmydv6/.local/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137009:13)
+      at Interface.emit (node:events:394:28)
+      at Interface._ttyWrite (node:readline:1069:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:394:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:394:28)
+      at addChunk (node:internal/streams/readable:312:12)
+
+npm manifest: 
+  {
+  	"private": true,
+  	"scripts": {
+  		"build": "parcel build source/manifest.json --no-content-hash --no-source-maps --dist-dir distribution --no-cache --detailed-report 0",
+  		"lint": "run-p lint:*",
+  		"lint-fix": "run-p 'lint:* -- --fix'",
+  		"lint:css": "stylelint source/**/*.css",
+  		"lint:js": "xo",
+  		"test": "run-p lint:* build",
+  		"watch": "parcel watch source/manifest.json --dist-dir distribution --no-cache --no-hmr"
+  	},
+  	"browserslist": [
+  		"last 1 Chrome version",
+  		"last 1 Firefox version"
+  	],
+  	"xo": {
+  		"envs": [
+  			"browser"
+  		],
+  		"rules": {
+  			"no-unused-vars": [
+  				"error",
+  				{
+  					"varsIgnorePattern": "browser"
+  				}
+  			]
+  		}
+  	},
+  	"stylelint": {
+  		"extends": "stylelint-config-xo"
+  	},
+  	"dependencies": {
+  		"webext-options-sync": "^2.0.1",
+  		"webextension-polyfill": "^0.7.0"
+  	},
+  	"devDependencies": {
+  		"@parcel/config-webextension": "^2.0.0-nightly.2220",
+  		"@parcel/optimizer-cssnano": "^2.0.0-nightly.599",
+  		"@parcel/optimizer-htmlnano": "^2.0.0-nightly.599",
+  		"@parcel/packager-css": "^2.0.0-nightly.599",
+  		"@parcel/packager-html": "^2.0.0-nightly.599",
+  		"@parcel/transformer-css": "^2.0.0-nightly.599",
+  		"@parcel/transformer-html": "^2.0.0-nightly.598",
+  		"@parcel/transformer-postcss": "^2.0.0-nightly.599",
+  		"@parcel/transformer-posthtml": "^2.0.0-nightly.598",
+  		"@parcel/transformer-webextension": "^2.0.0-nightly.2220",
+  		"npm-run-all": "^4.1.5",
+  		"parcel": "^2.0.0-nightly.596",
+  		"stylelint": "^13.10.0",
+  		"stylelint-config-xo": "^0.20.0",
+  		"xo": "^0.37.1"
+  	},
+  	"webExt": {
+  		"sourceDir": "distribution"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,36 @@
+{
+	"name": "Blackboard Customized",
+	"version": "0.1.0",
+	"description": "Blackboard has never looked this good! A modern upgrade to the education tool, originating from Utdallas' ELearning implementation.",
+	"homepage_url": "https://github.com/devJimmyboy/Blackboard-Customized",
+	"manifest_version": 2,
+	"minimum_chrome_version": "74",
+	"applications": {
+		"gecko": {
+			"id": "awesome-extension@notlmn.github.io",
+			"strict_min_version": "67.0"
+		}
+	},
+	"icons": {
+		"16": "/src/icons/icon-16.png",
+		"48": "/src/icons/icon-48.png",
+		"128": "/src/icons/icon-128.png"
+	},
+	"permissions": ["storage"],
+	"browser_action": {
+		"default_popup": "./popup/index.html",
+		"default_title": "Open the popup",
+		"default_icon": {
+			"16": "/src/icons/icon-16.png",
+			"48": "/src/icons/icon-48.png"
+		}
+	},
+	"options_ui": {
+		"chrome_style": true,
+		"page": "options.html"
+	},
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	}
+}

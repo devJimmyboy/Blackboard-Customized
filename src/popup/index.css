@@ -1,0 +1,11 @@
+@import "../tailwind.css";
+
+@layer components {
+  html {
+    @apply rounded-xl rounded-tr-none transition-transform w-1/4;
+  }
+}
+
+body {
+  background-color: var(--black);
+}

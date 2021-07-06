@@ -1,0 +1,143 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "@dracula/dracula-ui/styles/dracula-ui.css";
+
+@layer components {
+  body.learn-oe-body {
+  }
+  /*Heading - Top bar*/
+  div#globalNavPageNavArea {
+    @apply w-full !important;
+    & div.bgBanner {
+      @apply bg-blue-300 shadow-md z-20 h-20 overflow-hidden !important;
+      & .tabWrapper-right {
+        @apply w-1/2 h-full pt-2 flex flex-row !important;
+        & > * {
+          @apply bg-blue-200 rounded-t-2xl mt-1 active:mt-2 px-3 flex-auto max-w-xs text-lg text-center border-solid border-b-8 hover:border-red-300 active:border-b-4 transition-colors duration-200 !important;
+          & > a {
+            @apply w-full h-full text-lg !important;
+          }
+        }
+        & > .active {
+          @apply border-blue-600 hover:border-red-300 !important;
+        }
+      }
+    }
+  }
+
+  /*Heading - Login/logout stuff*/
+  div.global-nav-bar-wrap {
+    @apply fixed !important;
+    & .global-nav-bar {
+      &.logout {
+        & a {
+          @apply my-auto;
+          @apply w-max p-1 !important;
+          content: "yo" !important;
+          text-indent: 1.5rem !important;
+          background-position: 0% 0% !important;
+        }
+      }
+    }
+  }
+
+  div#breadcrumbs {
+    @apply shadow-md hover:shadow-lg z-40 transition-shadow duration-500 !important;
+
+    & div[role="navigation"] {
+    }
+  }
+
+  /*Content - Page content*/
+  div.contentPane {
+    @apply shadow-inner !important;
+  }
+
+  div#actionbar.actionBar {
+    @apply bg-blue-500  container shadow-lg hover:shadow-2xl rounded-lg overflow-hidden my-4 !important;
+
+    & ul.nav {
+      @apply rounded-lg border border-solid bg-blue-400 border-gray-600  !important;
+      & li.mainButton > a {
+        @apply hover:bg-blue-300 bg-none;
+      }
+    }
+  }
+
+  div.container {
+    @apply grid bg-white !important;
+    @apply shadow-lg hover:shadow-2xl rounded-xl overflow-hidden m-20 transition-shadow duration-300 !important;
+    @apply mt-0 !important;
+
+    & .portlet {
+      @apply rounded-md overflow-hidden !important;
+      & .portletList-img {
+        @apply rounded-lg border-2 p-5 border-solid border-gray-400 !important;
+        & > li {
+          @apply rounded-md p-2 border border-solid border-gray-400 shadow-md hover:shadow-xl bg-white duration-300 transition-shadow  !important;
+        }
+      }
+
+      & h2 {
+        @apply select-none !important;
+      }
+    }
+
+    & .fluidWrapperScheduler {
+      margin: -20px -10px;
+    }
+  }
+
+  div {
+    &.cont-row {
+    }
+    &.cont-col {
+    }
+  }
+
+  div#content {
+    @apply flex flex-col justify-center items-center !important;
+    & .vtbgenerated {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  #globalNavPageContentArea {
+    @apply flex flex-col items-stretch justify-start !important;
+    & > .locationPane {
+      @apply flex-grow !important;
+      & > div[role="main"] {
+        @apply h-full !important;
+        & > div.shadow {
+          @apply h-full border-none !important;
+        }
+      }
+    }
+  }
+
+  /*Buttons*/
+  .container input[role="button"] {
+    @apply focus-within:ring ring-blue-600 ring-offset-blue-300 hover:shadow-lg shadow-md
+    rounded hover:bg-blue-600 mx-1 text-base  bg-blue-500 text-gray-200 font-semibold transition-all !important;
+    &.submit {
+      @apply bg-green-500 hover:bg-green-600 !important;
+    }
+  }
+
+  /* Special Elearning components */
+  embed#PDFEmbedID {
+    @apply mt-10 relative !important;
+  }
+}
+
+#quick_links_wrap {
+  display: none !important;
+}

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	<body class="subpixel-antialiased drac-text drac-text-white">
+		<div class="drac-box p-6 min-w-popup h-64">
+			<div id="go-to-options">
+				<i class="fas fa-cog"></i>
+			</div>
+			<h1 class="drac-heading">Blackboard Customized</h1>
+			<hr />
+			<div
+				class="mt-4 drac-box drac-border-yellow py-2"
+				x-data="{ open: true }"
+			>
+				<input
+					type="checkbox"
+					name="enableTheming"
+					id="enableTheming"
+					class="drac-switch drac-checkbox drac-switch-purple"
+					x-bind:checked="open"
+					@click="open = !open"
+				/>
+				<label for="enableTheming" class="drac-text drac-text-white">
+					Enable Theming
+				</label>
+				<p class=""></p>
+
+				<div class="mt-4 flex-auto text-center rounded-sm" x-show="open">
+					<div
+						class="drac-bg-animated drac-text-black-secondary font-semibold p-4"
+					>
+						Sike, that isn't implemented yet
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>
